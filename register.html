@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/register.css">
+    <link href="image/icon_sample.png" rel="shortcut icon" type="image/x-icon">
+    <title>자취왕</title>
+</head>
+<body id="body">
+    <header id="top-bar">
+        <div id="top-bar-wrap">
+            <h4 id="top-bar-title" class="top-bar-shadow">
+                <a href="main.html">
+                    <img id="logo" alt="자취왕" src="image/logo.PNG">
+                </a>
+                <span class="membership">membership</span>
+                <button type="button" class="login" onclick="location.href='login.html'"><span>로그인</span></button>
+            </h4>
+        </div>
+    </header>
+    <div class="page-container">
+        <div class="register-form-container shadow">
+            <div class="register-form-left-side">
+                <div class="top-logo-wrap">
+                </div>
+                <h1>회원가입</h1>
+            </div>
+            <form name="form"></form>
+            <div class="register-form-right-side">
+                <div class="register-input-container">
+                    <div class="register-input-wrap">
+                        <input placeholder="이메일" type="text" id="email">
+                        <button class="confirm-btn" id="confirm-email">중복확인</button>
+                        <span id="eMsg">
+                        </span>
+                    </div>
+                    <div class="register-input-wrap">
+                        <input placeholder="이름" type="text" id="name">
+                        <span id="nameMsg">
+                        </span>
+                    </div><br>
+                    <input type="radio" name="gender" class="radio" value="man" checked="checked">남자
+                    <input type="radio" name="gender" class="radio" value="woman">여자
+                    <div class="register-input-wrap">
+                        <input placeholder="닉네임" type="text" id="nick">
+                        <button class="confirm-btn" id="confirm-nick">중복확인</button>
+                        <span id="nickMsg">
+                        </span>
+                    </div>
+                    <div class="register-input-wrap">
+                        <input placeholder="비밀번호" type="password" id="pw1">
+                        <div id="pw1Msg">
+                        </div>
+                    </div>
+                    <div class="register-input-wrap">
+                        <input placeholder="비밀번호 확인" type="password" id="pw2">
+                        <div id="pw2Msg">
+                        </div>
+                    </div><br>
+                    <div class="phone-btn-wrap">
+                        <span id="notAccess">본인 인증을 해주세요</span>
+                        <button class="phone-btn" id="phoneBtn">휴대폰 본인 인증</button>
+                    </div>
+                </div>
+                <br><br><br>
+                <div class="register-btn-wrap">
+                    <button class="register-btn" id="registerBtn" onClick="register()">가입하기</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="js/register.js">
+</script>
+</html>
