@@ -7,7 +7,7 @@ function loginFunc() {
     var not = document.getElementById("fail");
     
     if(userid == "") {
-        not.innerText = "아이디를 입력하세요";
+        not.innerText = "이메일을 입력하세요";
         not.style.display = "block";
     } else if(userid != "" && userpw == "") {
         not.innerText = "암호를 입력하세요";
