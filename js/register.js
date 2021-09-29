@@ -90,23 +90,3 @@ function register() {
     }
 }
 /** 전화번호 검사 */
-
-function checkEmail() {
-    
-}
-
-function checkNick() {
-
-}
-
-function checkPw() {
-
-}
-
-function checkPw2() {
-
-}
-
-function checkPhone() {
-
-}
