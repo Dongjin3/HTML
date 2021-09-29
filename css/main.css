@@ -1,0 +1,231 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Alata', sans-serif;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    overflow: hidden;
+}
+
+/*상단바 스타일시트*/
+
+#fixed-bar {
+    width: 100%;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+#fixed-bar-title {
+    font-size: 2rem;
+    margin-block-start: 0.4em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+#fixed-bar #fixed-bar-wrap {
+    width: 95%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.fixed-bar-shadow {
+    box-sizing: border-box;
+    border-bottom: 1px solid rgba(0,0,0,0.04);
+}
+
+#fixed-bar #fixed-bar-wrap .fixed-logo {
+    width: 120px;
+    vertical-align: text-bottom;
+    margin-bottom: 8px;
+}
+
+.login {
+    float: right;
+    text-decoration: none;
+    border: none;
+    background-color: white;
+    color: grey;
+    font-size: 20px;
+    margin-top: 5px;
+    margin-left: 20px;
+}
+
+button {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    font-size: 67%;
+}
+
+
+.membership {
+    float: right;
+    text-decoration: none;
+    border: none;
+    background-color: white;
+    color: grey;
+    font-size: 20px;
+    margin-top: 5px;
+    margin-left: 20px;
+}
+
+/*상단바 스타일시트*/
+
+/*전체적인 본문 스타일시트*/
+
+#wrapper {
+    width: 45em;
+    margin: 0 auto;
+    min-height: 100vh;
+    max-width: 100%;
+    padding: 4em 0;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -moz-flex-direction: column;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -moz-align-items: center;
+    -webkit-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    -moz-justify-content: flex-start;
+    justify-content: flex-start;
+}
+
+/*전체적인 본문 스타일시트*/
+
+/*가이드 버튼*/
+
+#nav {
+    text-align: center;
+    height: 4.25em;
+    cursor: default;
+}
+
+#nav div {
+    display: inline-block;
+}
+
+#nav a {
+    position: relative;
+    width: 1em;
+    height: 1em;
+    line-height: 0.9em;
+    font-size: 4em;
+    margin: 0 0.3em 0 0.3em;
+    opacity: 0.35;
+    outline: 0;
+}
+
+.icon.solid:before {
+    font-weight: 900;
+}
+
+.icon:before {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+    text-transform: none !important;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 400;
+    color: black;
+}
+
+/*가이드 버튼*/
+
+#main {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    background: #ffffff;
+    box-shadow: 0px 1px 0px 0px rgb(0 0 0 / 25%);
+    border: solid black 1px;
+}
+
+/* 말풍선 적절한 top 과 margin-left 로 위치조정 */
+.bubble-main {
+	z-index:100;
+	position: relative;
+	height: auto;
+	padding: 10px 10px 10px 10px;
+	background: #FFFFFF;
+	border-radius: 5px;
+	border: #7F7F7F solid 1px;
+	font-size: 16px;
+	text-align: left;
+    margin-left: 0;
+    top: 20px;
+    
+}
+	
+.bubble-main:after {
+	content: '';
+	position: absolute;
+	border-style: solid;
+	border-width: 0 16px 20px 17.5px;
+	border-color: #FFFFFF transparent;
+	display: block;
+	width: 0;
+	z-index: 1;
+	top: -18.5px; 
+	left: 205px; 
+}
+	
+.bubble-main:before {
+	content: '';
+	position: absolute;
+	border-style: solid;
+	border-width: 0 16px 20px 17.5px;
+	border-color: #7F7F7F transparent;
+	display: block;
+	width: 0;
+	z-index: 0;
+	top: -20px;
+	left: 205px;
+}
+
+.main {
+    display: flex;
+    border: solid black 1px;
+    width: 650px;
+}
+
+.main h1 {
+    margin-top: 10px;
+}
+
+#arrow-right {
+    margin-top: 75px;
+    height: 30px;
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+#arrow-left {
+    margin-top: 75px;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 30px;
+    font-size: 30px;
+}
